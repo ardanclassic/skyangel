@@ -1,0 +1,11 @@
+.enemy {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+
+  transform: rotateY(180deg);
+  background-image: url('../../assets/images/redbird.gif');
+  background-size: 72px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

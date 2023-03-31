@@ -1,0 +1,98 @@
+.custom-popup {
+  width: max-content;
+  max-width: 50%;
+  padding: 8px 24px 16px;
+  border-radius: 16px;
+  background-color: #4a0c0cd9;
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    color: khaki;
+  }
+  .content {
+    color: #fff;
+    margin-bottom: 8px;
+    .text {
+      font-size: 20px;
+      font-weight: 600;
+      color: burlywood;
+    }
+    .boxstatus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box {
+        margin: 8px 8px 0;
+        width: 100px;
+        .value {
+          font-size: 48px;
+          font-weight: bold;
+          width: max-content;
+          padding: 0 12px;
+          margin: 6px auto;
+          border-radius: 8px;
+          background-color: gray;
+        }
+      }
+    }
+    .sendbox {
+      margin: 8px;
+      .sendlink {
+        background-color: brown;
+        margin: 8px;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+          background-color: teal;
+          color: #fff;
+        }
+      }
+      input {
+        padding: 6px 16px;
+        border-radius: 6px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        border: 1px solid #fff;
+        background-color: transparent;
+      }
+      .error-message {
+        font-size: 14px;
+        color: yellow;
+      }
+    }
+  }
+  .action-area {
+    button {
+      padding: 8px 24px;
+      border: none;
+      outline: none;
+      margin: 8px;
+      max-width: 200px;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.1s all ease-in-out;
+
+      &.continue:hover {
+        background-color: green;
+        color: #fff;
+      }
+      &.restart:hover {
+        background-color: dodgerblue;
+        color: #fff;
+      }
+      &.quit:hover {
+        background-color: tomato;
+        color: #fff;
+      }
+    }
+  }
+}

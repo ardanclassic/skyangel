@@ -1,0 +1,10 @@
+.player {
+  width: 64px;
+  height: 48px;
+  position: absolute;
+  transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-image: url('../../assets/images/plane.png');
+  background-size: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

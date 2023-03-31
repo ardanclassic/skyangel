@@ -1,0 +1,38 @@
+.game-arena {
+  position: relative;
+  margin: 0 auto;
+  background-color: #222;
+  border-radius: 16px;
+  width: 1024px;
+  height: 768px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/** setup parallax background */
+
+.moving-bg {
+  // background-image: 
+  //   url(https://i.ibb.co/jTQFTVq/background-mountain5.png),
+  //   url(https://i.ibb.co/b5JFDpB/background-mountain4.png),
+  //   url(https://i.ibb.co/z7n0Z70/background-mountain3.png),
+  //   url(https://i.ibb.co/tJFNq78/background-mountain2.png),
+  //   url(https://i.ibb.co/9N2QQ1L/background-mountain1.jpg);
+  
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/background.png");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  z-index: 1;
+  animation: parallax_bg linear 40s infinite;
+  background-size: cover;
+}
+
+@keyframes parallax_bg {
+  100% {
+    background-position-x: -2400px, -2000px, -1800px, -1600px, -1200px;
+  }
+}
