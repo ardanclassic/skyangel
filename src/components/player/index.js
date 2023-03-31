@@ -20,7 +20,7 @@ const Player = () => {
     const offset_right = 1024;
     /** ---------------- --------- ---------------- */
 
-    if (life > 0) {
+    if (life > 0 && !pause) {
       if (player.x > offset_left + 4) {
         if (keystate['a'] || keystate['ArrowLeft']) updatePlayer('x', false);
       }

@@ -9,18 +9,22 @@
   transform: translateY(-50%);
   overflow: hidden;
   white-space: nowrap;
+
+  .pause-button {
+    width: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 8px 12px 12px;
+    border-radius: 0 0 0 24px;
+    background-color: lavender;
+    cursor: pointer;
+  }
 }
 
 /** setup parallax background */
 
 .moving-bg {
-  // background-image: 
-  //   url(https://i.ibb.co/jTQFTVq/background-mountain5.png),
-  //   url(https://i.ibb.co/b5JFDpB/background-mountain4.png),
-  //   url(https://i.ibb.co/z7n0Z70/background-mountain3.png),
-  //   url(https://i.ibb.co/tJFNq78/background-mountain2.png),
-  //   url(https://i.ibb.co/9N2QQ1L/background-mountain1.jpg);
-  
   width: 100%;
   height: 100%;
   background-image: url("../../assets/images/background.png");
