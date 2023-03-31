@@ -13,7 +13,7 @@
   .content-area {
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -30%);
     .title-area {
@@ -28,26 +28,43 @@
     }
 
     .action-area {
-      .start {
-        position: absolute;
-        left: -20%;
-        top: 12em;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 18em;
+      left: 50%;
+      transform: translateX(-50%);
+      button {
         cursor: pointer;
-        padding: 16px 24px;
-        font-size: 32px;
+        padding: 12px 24px;
+        margin: 8px auto;
+        font-size: 26px;
         font-weight: 600;
         border: 4px solid teal;
         color: teal;
         outline: none;
         border-radius: 12px;
         transition: 0.2s all ease-in;
-
         &:hover {
           background-color: teal;
           color: #fff;
           scale: 1.05;
         }
       }
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: darkseagreen;
+    font-size: 18px;
+    font-weight: 600;
+    span {
+      color: crimson;
+      margin: 0 4px;
     }
   }
 

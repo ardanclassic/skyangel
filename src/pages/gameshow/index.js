@@ -32,6 +32,7 @@ const GameShow = () => {
           <ParachutesGenerator {...statedata} />
           <StarsGenerator {...statedata} />
           <EnemiesGenerator {...statedata} />
+          <div className="pause"></div>
         </div>
         <div className="moving-bg"></div>
       </div>

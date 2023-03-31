@@ -72,7 +72,7 @@ const Rankings = () => {
     if (status) {
       return (
         <div className="action-area">
-          <div className="loading-text">Initializing game . . .</div>
+          <div className="loading-text">initializing game . . .</div>
         </div>
       )
     } else {

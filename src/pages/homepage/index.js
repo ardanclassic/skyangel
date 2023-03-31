@@ -6,9 +6,13 @@ import './style.scss'
 const HomePage = () => {
   const navigate = useNavigate();
 
-  const handleStart = () => {
-    localStorage.setItem("start", true);
-    navigate("/ranks")
+  const handleAction = (act) => {
+    if (act === 'start') {
+      localStorage.setItem("start", true);
+      navigate("/ranks")
+    } else {
+      navigate("/tutorial")
+    }
   }
 
   return (
@@ -21,8 +25,14 @@ const HomePage = () => {
             <div className="title-text">Sky Angel</div>
           </div>
           <div className="action-area">
-            <button className="start" onClick={handleStart}>Start Game</button>
+            <button className="start" onClick={() => handleAction('start')}>Start Game</button>
+            <button className="how" onClick={() => handleAction('how')}>How To</button>
           </div>
+        </div>
+        <div className="copyright">
+          made with
+          <span> &#10084; </span> by
+          ardanclassic
         </div>
       </div>
     </div>
