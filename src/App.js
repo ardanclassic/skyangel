@@ -5,6 +5,10 @@ function App() {
   return (
     <Router>
       <MainRoutes />
+      <div className="device">
+        not available yet on mobile device. <br />
+        Try in higher resolution like laptop, pc, etc.
+      </div>
     </Router>
   );
 }
