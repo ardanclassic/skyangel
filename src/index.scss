@@ -14,6 +14,16 @@ body {
   height: 100vh;
 }
 
+.swal2-container {
+  .custom-popup {
+    width: max-content;
+    max-width: 50%;
+    padding: 8px 24px 16px;
+    border-radius: 16px;
+    background-color: #4a0c0cd9;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   body {
     .container {
