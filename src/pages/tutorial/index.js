@@ -15,15 +15,17 @@ const Tutorial = () => {
   const ShowContent = () => {
     return (
       <div className="content-area">
-        <div className="title">Keyboard Control</div>
-        <div className="subtitle">take control of the plane and avoid the damn red birds!</div>
+        <div className="mission">
+          Fly the airplane, collect as many points as possible by grabbing the falling stars and parachute boxes.
+          Be careful, avoid colliding with the red birds!
+        </div>
         <div className="tutorial-box movement">
-          <div className="desc">Player Movement</div>
+          <div className="desc">player movement</div>
           <img src={wasd} alt="wasd" />
           <img src={arrowkeys} alt="arrowkeys" />
         </div>
         <div className="tutorial-box pause">
-          <div className="desc">Pause Game</div>
+          <div className="desc">pause the game</div>
           <img src={spacebar} alt="spacebar" />
         </div>
       </div>

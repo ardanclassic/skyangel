@@ -16,16 +16,17 @@
     top: 2em;
     left: 50%;
     transform: translateX(-50%);
-    .title {
-      font-size: 32px;
-      font-weight: bold;
-      color: #0a4c4c;
-    }
-    .subtitle {
-      font-size: 24px;
+    .mission {
+      font-size: 20px;
       font-weight: 600;
       margin: 16px auto;
-      color: darkgreen;
+      color: lemonchiffon;
+      max-width: 700px;
+      white-space: normal;
+      background-color: #008080b3;
+      width: max-content;
+      padding: 16px 24px;
+      border-radius: 16px;
     }
     .tutorial-box {
       position: relative;
@@ -63,7 +64,7 @@
   .action-area {
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 40em;
     transform: translateX(-50%);
     button {
       cursor: pointer;
