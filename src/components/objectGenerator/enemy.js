@@ -13,7 +13,7 @@ const EnemiesGenerator = (state) => {
     const generateEnemy = setInterval(() => {
       if (!pause && !death) {
         const id = getRandNumber(100, 1000);
-        const y = getRandNumber(100, 600);
+        const y = window.innerHeight > 768 ? getRandNumber(100, 600) : getRandNumber(50, window.innerHeight - 50);
         const createEnemy = { id: `en-${id}`, x: 990, y, type: 'enemy' };
         updateEnemy(createEnemy)
       }

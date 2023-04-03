@@ -13,7 +13,7 @@ const StarsGenerator = (state) => {
     const generateStar = setInterval(() => {
       if (!pause && !death) {
         const id = getRandNumber(100, 1000);
-        const x = getRandNumber(300, 800);
+        const x = getRandNumber(400, 1000);
         const createStar = { id: `fo-${id}`, x, y: 5, type: 'star' };
         updateStar(createStar)
       }

@@ -4,11 +4,16 @@
   background-color: #222;
   border-radius: 16px;
   width: 1024px;
-  height: 768px;
+  max-height: 768px;
   top: 50%;
   transform: translateY(-50%);
-  overflow: hidden;
   white-space: nowrap;
+  overflow-y: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
   .content-area {
     text-align: center;
@@ -69,7 +74,7 @@
     button {
       cursor: pointer;
       padding: 12px 24px;
-      margin: 8px 24px;
+      margin: 8px 24px 36px;
       font-size: 26px;
       font-weight: 600;
       border: 4px solid teal;
@@ -85,13 +90,11 @@
     }
   }
 
-  .bg {
-    width: 100%;
-    height: 100%;
+  &.bg {
     background-image: url("../../assets/images/homebg.png");
     background-repeat: repeat-x;
     background-position: 0 100%;
-    background-size: cover;
+    background-size: 1024px 768px;
     z-index: 1;
   }
 }

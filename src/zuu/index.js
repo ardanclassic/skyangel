@@ -29,7 +29,7 @@ export const useStatusStore = create((set) => ({
   increaseBigLife: () => set((state) => ({ life: state.life + 10 })),
   reduceLife: () => set((state) => ({ life: state.life - 1 })),
   removeLife: () => set({ life: 0 }),
-  resetLife: () => set({ life: 10 }),
+  resetLife: () => set({ life: 10000 }),
 
   updatePause: (status) => set(() => ({ pause: status })),
   increaseTime: () => set((state) => ({ time: state.time + 1 })),

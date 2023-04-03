@@ -30,11 +30,18 @@ const Parachute = (data) => {
 
   useEffect(() => {
     const moveObject = setInterval(() => {
+      /** horizontal outframe collision */
       if (posX > 0) !pause && life > 0 && setposX(posX - 2)
       else currentElement && currentElement.remove()
 
-      if (posY > 0 && posY < 735) !pause && life > 0 && setposY(posY + 5)
-      else currentElement && currentElement.remove()
+      /** vertical outframe collision */
+      if (window.innerHeight > 768) {
+        if (posY > 0 && posY < 725) !pause && life > 0 && setposY(posY + 5)
+        else currentElement && currentElement.remove()
+      } else {
+        if (posY > 0 && posY < window.innerHeight - 64) !pause && life > 0 && setposY(posY + 5)
+        else currentElement && currentElement.remove()
+      }
     }, 30);
     return () => clearInterval(moveObject);
   }, [posX, posY, life, pause, currentElement])

@@ -87,7 +87,7 @@ const Rankings = () => {
 
   return (
     <div className="container">
-      <div className="rankings">
+      <div className="rankings" style={{ height: window.innerHeight < 768 ? "100%" : 768 }}>
         <div className="bg"></div>
         <ShowContent />
         <ShowActionButton />

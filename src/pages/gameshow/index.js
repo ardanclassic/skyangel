@@ -26,7 +26,7 @@ const GameShow = () => {
 
   return (
     <div className="container">
-      <div id='game-arena' className="game-arena">
+      <div className="game-arena" style={{ height: window.innerHeight < 768 ? "100%" : 768 }}>
         <div className="foreground">
           <StatusBar />
           <Player />

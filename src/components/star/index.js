@@ -32,8 +32,14 @@ const StarPoint = (data) => {
       if (posX > 0) !pause && life > 0 && setposX(posX - 5)
       else currentElement && currentElement.remove()
 
-      if (posY > 0 && posY < 735) !pause && life > 0 && setposY(posY + 5)
-      else currentElement && currentElement.remove()
+      /** vertical outframe collision */
+      if (window.innerHeight > 768) {
+        if (posY > 0 && posY < 735) !pause && life > 0 && setposY(posY + 5)
+        else currentElement && currentElement.remove()
+      } else {
+        if (posY > 0 && posY < window.innerHeight - 24) !pause && life > 0 && setposY(posY + 5)
+        else currentElement && currentElement.remove()
+      }
     }, 80);
     return () => clearInterval(moveObject);
   }, [pause, life, posX, posY, currentElement])

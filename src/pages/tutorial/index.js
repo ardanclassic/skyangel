@@ -42,8 +42,7 @@ const Tutorial = () => {
 
   return (
     <div className="container">
-      <div className="tutorial">
-        <div className="bg"></div>
+      <div className="tutorial bg" style={{ height: window.innerHeight < 768 ? "100%" : 768 }}>
         <ShowContent />
         <ShowActionButton />
       </div>

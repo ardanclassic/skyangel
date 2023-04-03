@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <div className="container">
-      <div className="homepage">
+      <div className="homepage" style={{ height: window.innerHeight < 768 ? "100%" : 768 }}>
         <div className="bg"></div>
         <div className="content-area">
           <div className="title-area">

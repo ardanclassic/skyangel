@@ -14,10 +14,14 @@ const Player = () => {
 
   const movement = useCallback(() => {
     /** ---------------- variables ---------------- */
-    const offset_top = 0;
     const offset_left = 0;
-    const offset_bottom = 768;
     const offset_right = 1024;
+    let offset_bottom = 768;
+    let offset_top = 0;
+
+    if (window.innerHeight < 768) {
+      offset_bottom = window.innerHeight;
+    }
     /** ---------------- --------- ---------------- */
 
     if (life > 0 && !pause) {
